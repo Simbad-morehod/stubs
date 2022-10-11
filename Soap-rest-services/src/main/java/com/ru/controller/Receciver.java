@@ -149,7 +149,7 @@ public class Receciver {
         HttpEntity<String> request = new HttpEntity<>(xmlString, headers);
         final ResponseEntity<String> response = restTemplate.postForEntity(urlAd,request,String.class);
     }
-    //---------Сессионные данные для data-collector--------
+    //---------описание 3 --------
 
             @RequestMapping("/ses/{ses}/{sId}/{key}")
     public ResponseEntity<JsonNode> asda(@PathVariable String ses,@PathVariable String sId,@PathVariable String key) throws IOException {
